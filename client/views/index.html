@@ -11,11 +11,24 @@
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sofadi+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <base href="/" target="_blank">
+    <base href="/">
   </head>
   <body ng-app="careApp">
     <h1>Welcome to CareShare!</h1>
-    <h3></h3>
+
+    <!-- Consider this the main view -->
+    <h2>Login Page</h2>
+    <!-- Shown for users that are NOT logged in -->
+    <section ng-hide="auth.loggedIn">
+      <!-- I got this button image from Googles sign-in button brand guidelines page -->
+      <img class="googleLogin" src="assets/btn_google_signin_dark_normal_web.png" />
+    </section>
+    <!-- Shown for users that are logged in -->
+    <section ng-show="auth.loggedIn">
+      <p>
+        You are logged in!
+      </p>
+    </section>
     <span><span></span></span>
     <div class="wrap">
       <a href="#login"><div></div></a>

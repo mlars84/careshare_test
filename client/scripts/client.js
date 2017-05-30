@@ -4,7 +4,7 @@ const careApp = angular.module('careApp', ['ngRoute'], function() {
   careApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
       templateUrl: 'views/index.html',
-      controller: 'LoginController as lc'
+      controller: 'AuthController as ac'
     }).when('/home', {
       templateUrl: 'views/pages/home',
       controller: 'HomeController as hc'
@@ -20,5 +20,5 @@ const careApp = angular.module('careApp', ['ngRoute'], function() {
     }).otherwise('/');
     $locationProvider.html5Mode(true);
   }); //end config
-  
+
 }); //end careApp

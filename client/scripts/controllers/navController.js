@@ -1,8 +1,6 @@
-careApp.controller('HomeController', ['homeService', function(AuthFactory, $window, homeService) {
-  console.log('made it to the HomeController');
-
-  const _this = this;
-  const authFactory = AuthFactory;
+googleAuthApp.controller('NavController', function (AuthFactory, $window) {
+  var _this = this;
+  var authFactory = AuthFactory;
   _this.displayLogout = false; // should we display the logout option on the DOM?
   _this.message = {
     text: false,
@@ -39,4 +37,5 @@ careApp.controller('HomeController', ['homeService', function(AuthFactory, $wind
         _this.message.type = 'error';
       });
   };
-}]); //end HomeController
+
+});
