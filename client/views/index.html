@@ -5,12 +5,15 @@
     <title>CareShare</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://mbostock.github.com/d3/d3.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sofadi+One" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <base href="/" target="_blank">
   </head>
-  <body>
+  <body ng-app="careApp">
     <h1>Welcome to CareShare!</h1>
     <h3></h3>
     <span><span></span></span>
@@ -21,5 +24,22 @@
       <a href="#careshare"><div></div></a>
       <a href="#sharenetwork"><div></div></a>
     </div>
+    <div id="viz"></div>
+    <script type="text/javascript">
+    const sampleSVG = d3.select("#viz")
+    .append("svg")
+    .attr("width", 100)
+    .attr("height", 100);
+
+    sampleSVG.append('circle')
+    .style("stroke", "grey")
+    .style("fill", "white")
+    .attr("r", 40)
+    .attr("cx", 50)
+    .attr("cy", 50)
+    .on("mouseover", function() {d3.select(this).style("fill", "pinkls cd");})
+    .on("mouseout", function() {d3.select(this).style("fill", "white");})
+    </script>
   </body>
+  <ng-view></ng-view>
 </html>

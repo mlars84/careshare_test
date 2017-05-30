@@ -1,10 +1,24 @@
-const myApp = angular.module('myApp', ['ngRoute'], function() {
+const careApp = angular.module('careApp', ['ngRoute'], function() {
 
   //ng config for multiple views
-  myApp.config(function($routeProvider, $locationProvider) {
+  careApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
-      template: '<h3>Some text</h3>',
-      controller: 'DefaultController as DC'
-    }).when('/')
-  })
-});
+      templateUrl: 'views/index.html',
+      controller: 'LoginController as lc'
+    }).when('/home', {
+      templateUrl: 'views/pages/home',
+      controller: 'HomeController as hc'
+    }). when('/careshare', {
+      templateUrl: '/views/pages/careshare',
+      controller: 'CareShareController as csc'
+    }).when('/careprofile', {
+      templateUrl: '/views/pages/careprofile',
+      controller: 'CareProfileController as cpc'
+    }).when('/sharenetwork', {
+      templateUrl: '/views/pages/sharenetwork',
+      controller: 'ShareNetworkController as snc'
+    }).otherwise('/');
+    $locationProvider.html5Mode(true);
+  }); //end config
+  
+}); //end careApp
