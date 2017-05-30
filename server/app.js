@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
-const db = require('./modules/db');
 const session = require('express-session');
 /** ---------- REQUIRE CUSTOM APP MODULES ---------- **/
 const passport = require('../auth/passport');
@@ -12,7 +11,7 @@ const index = require('../routes/index');
 const auth = require('../routes/auth');
 const isLoggedIn = require('../utils/auth');
 const private = require('../routes/private/index');
-const database = require('../server/modules/db.js');
+const database = require('../utils/database');
 
 //globals
 const port = process.env.PORT || 8080;

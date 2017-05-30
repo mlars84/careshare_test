@@ -1,17 +1,13 @@
-<!-- Bring in the Angular app -->
-  <main class="container" ng-app="careApp">
-    <!-- NavController is on every page -->
-    <header ng-controller="HomeController as hc">
-      <h1>Home page?</h1>
-      <nav>
-        <ul class="row">
-          <li class="two columns"><a href="#home">Home</a></li>
-          <li class="two columns"><a href="#calendar">Calendar</a></li>
-          <li class="six columns" ng-show="hc.displayLogout">Hi {{hc.username}}! | <a href="#" ng-click="hc.logout()">Logout</a></li>
-        </ul>
-      </nav>
-      <!-- Show a helpful message when needed -->
-      <section id="message" class="hc.message.type" ng-show="hc.message.text">
-        {{hc.message.text}}
-      </section>
-    </header>
+<!-- Consider this the main view -->
+<h2>Login Page</h2>
+<!-- Shown for users that are NOT logged in -->
+<section ng-hide="auth.loggedIn">
+  <!-- I got this button image from Googles sign-in button brand guidelines page -->
+  <a href= "/auth/google"><img src="/public/assets/btn_google_signin_dark_normal_web.png" /></a>
+</section>
+<!-- Shown for users that are logged in -->
+<section ng-show="auth.loggedIn">
+  <p>
+    You are logged in!
+  </p>
+</section>

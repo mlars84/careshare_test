@@ -4,10 +4,10 @@ const careApp = angular.module('careApp', ['ngRoute'], function() {
   careApp.config(function($routeProvider, $locationProvider) {
     $routeProvider.when('/', {
       templateUrl: 'views/index.html',
-      controller: 'AuthController as ac'
+      controller: 'AuthController as auth'
     }).when('/home', {
       templateUrl: 'views/pages/home',
-      controller: 'HomeController as hc'
+      controller: 'NavController as nav'
     }). when('/careshare', {
       templateUrl: '/views/pages/careshare',
       controller: 'CareShareController as csc'

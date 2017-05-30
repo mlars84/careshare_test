@@ -10,7 +10,7 @@
     googleAuth: {
       clientId: '135959306026-cltfi3s6iv4mt5v38iihd0vg5klj3iga.apps.googleusercontent.com',
       clientSecret: 'jV7ZcOG_2B6AI395KLnDbYtk',
-      callbackUrl: 'http://localhost:3000/',
+      callbackUrl: 'http://localhost:3000',
     },
 
     sessionVars: {
