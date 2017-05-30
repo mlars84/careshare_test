@@ -1,5 +1,5 @@
 googleAuthApp.factory('AuthFactory', function ($http) {
-  var Status = {
+  const Status = {
     loggedIn: false,
   };
 

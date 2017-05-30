@@ -7,9 +7,9 @@
  * @function findUserByGoogleId finds a User by their Google id
  * @function create a User that will be authenticated by Google
  */
-var User = require('../models/user');
+const User = require('../services/user');
 
-var UserService = {
+const UserService = {
   findUserById: function (id, callback) {
     User.findById(id, function (err, user) {
       if (err) {
@@ -32,7 +32,7 @@ var UserService = {
   },
 
   createGoogleUser: function (id, token, name, email, callback) {
-    var user = new User();
+    const user = new User();
 
     user.googleId = id;
     user.googleToken = token;

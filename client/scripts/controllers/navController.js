@@ -1,6 +1,6 @@
 googleAuthApp.controller('NavController', function (AuthFactory, $window) {
-  var _this = this;
-  var authFactory = AuthFactory;
+  const _this = this;
+  const authFactory = AuthFactory;
   _this.displayLogout = false; // should we display the logout option on the DOM?
   _this.message = {
     text: false,

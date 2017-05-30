@@ -4,9 +4,9 @@
  *
  * @module routes/index
  */
-var express = require('express');
-var router = express.Router();
-var path = require('path');
+const express = require('express');
+const router = express.Router();
+const path = require('path');
 /**
  * GET /
  *
@@ -14,7 +14,7 @@ var path = require('path');
  * @return index.html
  */
 router.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, '../public/views/index.html'));
+  res.sendFile(path.join(__dirname, '../client/views/index.html'));
 });
 
 module.exports = router;

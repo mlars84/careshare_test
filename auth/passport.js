@@ -11,13 +11,13 @@
  * @module auth/passport
  */
  /** ---------- REQUIRE NODE MODULES ---------- **/
-var passport = require('passport');
-var GoogleStrategy = require('passport-google-oauth2').Strategy;
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth2').Strategy;
 /** ---------- REQUIRE CUSTOM APP MODULES ---------- **/
-var config = require('../config/auth');
+const config = require('../config/auth');
 
 // all db queries moved to a service layer, necessary for proper unit testing
-var UserService = require('../services/user');
+const UserService = require('../server/services/user');
 /** ---------- PASSPORT SESSION SERIALIZATION ---------- **/
 
 // serialize the user onto the session

@@ -6,7 +6,7 @@
   * @todo give yourself a unique secrect for your sessions
   * @module config/auth
   */
-  var authConfigs = {
+  const authConfigs = {
     googleAuth: {
       clientId: '135959306026-cltfi3s6iv4mt5v38iihd0vg5klj3iga.apps.googleusercontent.com',
       clientSecret: 'jV7ZcOG_2B6AI395KLnDbYtk',

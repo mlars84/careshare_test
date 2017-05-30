@@ -3,9 +3,9 @@
  *
  * @module routes/private/index
  */
-var express = require('express');
-var router  = express.Router();
-var calendar = require('./calendar');
+const express = require('express');
+const router  = express.Router();
+const calendar = require('./calendar');
 
 /** ---------- SUBROUTES ---------- **/
 router.use('/calendar', calendar);

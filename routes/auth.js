@@ -4,9 +4,9 @@
  *
  * @module routes/auth
  */
-var express = require('express');
-var router = express.Router();
-var passport = require('../auth/passport');
+const express = require('express');
+const router = express.Router();
+const passport = require('../auth/passport');
 /**
  * GET /auth/google
  *
