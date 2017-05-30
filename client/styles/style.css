@@ -4,15 +4,11 @@ h1 {
   font-size: 12vmin;
   font-weight: 900;
   /*color: #99CCFF;*/
-  /*text-shadow: 2px 4px #FF66FF;*/
+  text-shadow: 1px 2px #99CCFF;
 }
 
 body {
   background-color: #F0E68C;
-}
-
-#viz {
-  
 }
 
 body,html{margin:0;padding:0;height:100%;}
@@ -32,7 +28,7 @@ a{
   width:47.5%; height:47.5%;
   overflow:hidden;
   transform:scale(.5) translateZ(0px);
-  background:#585247;
+  background:#99CCFF;
 }
 a div{
   height:100%;
@@ -47,7 +43,7 @@ a:nth-child(1){
   transition:transform .4s .15s;
 }
 a:nth-child(1) div{
-  /*background-image:url('https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg');*/
+  background-image:url('http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-17.jpg');
 }
 a:nth-child(2){
   border-radius:0 40vmin 0 0;
@@ -56,7 +52,7 @@ a:nth-child(2){
   transition:transform .4s .2s;
 }
 a:nth-child(2) div{
-  /*background-image:url('https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg');*/
+  background-image:url('https://images.pexels.com/photos/291544/pexels-photo-291544.jpeg?h=350&auto=compress&cs=tinysrgb');
 }
 a:nth-child(3){
   border-radius:0 0 0 40vmin;
@@ -65,7 +61,7 @@ a:nth-child(3){
   transition:transform .4s .25s;
 }
 a:nth-child(3) div{
-  /*background-image:url('https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg');*/
+  background-image:url('http://britestart.com.mt/wp-content/uploads/2015/11/play2.jpg');
 }
 a:nth-child(4){
   border-radius:0 0 40vmin 0;
@@ -74,7 +70,7 @@ a:nth-child(4){
   transition:transform .4s .3s;
 }
 a:nth-child(4) div{
-  /*background-image: url('https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg');*/
+  background-image: url('http://benrogersproperty.com/wp-content/uploads/2016/10/hd-small-houses-designs-and-plans-613x462.jpg');
 }
 a:nth-child(5){
   width:55%;height:55%;
@@ -84,7 +80,7 @@ a:nth-child(5){
   transform:scale(1);
 }
 a:nth-child(5) div{
-  /*background-image: url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');*/
+  background-image: url('https://fthmb.tqn.com/3ccNvIRhdvpivEeNV-NZ5D9D_uA=/3372x2248/filters:no_upscale():fill(transparent,1)/about/kitten-looking-at-camera-521981437-57d840213df78c583374be3b.jpg');
 }
 span{
   position:relative;
@@ -93,7 +89,7 @@ span{
   top:45vmin;
   width:10vmin; height:10vmin;
   border-radius:100%;
-  background:#585247;
+  background: pink;
   transform:translateZ(0px);
 }
 span span{

@@ -24,22 +24,6 @@
       <a href="#careshare"><div></div></a>
       <a href="#sharenetwork"><div></div></a>
     </div>
-    <div id="viz"></div>
-    <script type="text/javascript">
-    const sampleSVG = d3.select("#viz")
-    .append("svg")
-    .attr("width", 100)
-    .attr("height", 100);
-
-    sampleSVG.append('circle')
-    .style("stroke", "grey")
-    .style("fill", "white")
-    .attr("r", 40)
-    .attr("cx", 50)
-    .attr("cy", 50)
-    .on("mouseover", function() {d3.select(this).style("fill", "pinkls cd");})
-    .on("mouseout", function() {d3.select(this).style("fill", "white");})
-    </script>
   </body>
   <ng-view></ng-view>
 </html>
