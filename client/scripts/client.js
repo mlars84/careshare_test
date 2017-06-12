@@ -20,5 +20,5 @@ const careApp = angular.module('careApp', ['ngRoute'], function() {
     }).otherwise('/');
     $locationProvider.html5Mode(true);
   }); //end config
-
+  
 }); //end careApp

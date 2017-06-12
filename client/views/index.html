@@ -5,40 +5,40 @@
     <title>CareShare</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/services/authFactory.js" charset="utf-8"></script>
     <script src="scripts/controllers/NavController.js" charset="utf-8"></script>
     <script src="scripts/controllers/authController.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="http://mbostock.github.com/d3/d3.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Sofadi+One" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/style.css">
     <base href="/">
   </head>
-  <body>
+  <!-- <body> -->
   <!-- Bring in the Angular app -->
-  <main class="container" ng-app="theGoogles">
+  <!-- <main class="container" ng-app="careApp"> -->
     <!-- NavController is on every page -->
-    <header ng-controller="NavController as nav">
-      <h1>CareShare</h1>
-      <nav>
-        <ul class="row">
-          <li class="two columns"><a href="/home">Home</a></li>
-          <li class="two columns"><a href="#calendar">Calendar</a></li>
+    <!-- <header ng-controller="NavController as nav"> -->
+      <!-- <h1>CareShare</h1> -->
+      <!-- <nav> -->
+        <!-- <ul class="row"> -->
+          <!-- <li class="two columns"><a href="/home">Home</a></li>
+          <li class="two columns"><a href="/careprofile">Calendar</a></li>
           <li class="six columns" ng-show="nav.displayLogout">Hi {{nav.username}}! | <a href="#" ng-click="nav.logout()">Logout</a></li>
-        </ul>
-      </nav>
+        </ul> -->
+      <!-- </nav> -->
       <!-- Show a helpful message when needed -->
-      <section id="message" class="nav.message.type" ng-show="nav.message.text">
-        {{nav.message.text}}
-      </section>
-    </header>
+      <!-- <section id="message" class="nav.message.type" ng-show="nav.message.text"> -->
+        <!-- {{nav.message.text}} -->
+      <!-- </section> -->
+    <!-- </header> -->
     <!-- Pull in views via ngRoutes here -->
-    <ng-view></ng-view>
-  </main>
-</body>
-  <!-- <body ng-app="careApp">
+    <!-- <ng-view></ng-view> -->
+  <!-- </main> -->
+<!-- </body> -->
+  <body ng-app="careApp">
     <h1>Welcome to CareShare!</h1>
     <span><span></span></span>
     <div class="wrap">
@@ -49,5 +49,5 @@
       <a href="/sharenetwork"><div></div></a>
     </div>
   </body>
-  <ng-view></ng-view> -->
+  <ng-view></ng-view>
 </html>
